@@ -14,12 +14,13 @@
 
 <body>
     <header>
-        <nav class="flex justify-between items-center px-2 sm:px-15 py-6 ">
-            <div class="flex items-center gap-3">
-                <img class="w-8" src="assets/logo.png" alt="">
-                <h1 class="text-sm text-[#006747] font-bold">Emergency <br> Service</h1>
+        <nav class="flex flex-col sm:flex-row justify-between items-center px-2 sm:px-15 py-6">
+            <div class="flex items-center gap-2">
+                <img class="w-10 sm:w-8" src="assets/logo.png" alt="">
+                <h1 class="text-lg sm:text-sm text-[#006747] font-bold">Emergency <br class="hidden sm:block"> Service
+                </h1>
             </div>
-            <div class="flex items-center gap-6 sm:gap-8">
+            <div class="flex items-center gap-6 sm:gap-8 mt-4 sm:mt-0">
                 <div class="flex items-center bg-[#41ff6b1a] py-2 px-5 rounded-[50px]">
                     <h1><span id="heart-count">0</span></h1>
                     <img class="h-[20px] w-[20px] ml-3" src="assets/heart.png" alt="">
@@ -29,8 +30,8 @@
                     <img class="h-[20px] w-[20px] ml-3" src="assets/coin.png" alt="">
                 </div>
                 <div>
-                    <button class="bg-[#00a63e] py-2 px-6 rounded-[50px] text-white "><span
-                            id="copy-count" class="mr-1">0
+                    <button class="bg-[#00a63e] py-2 px-6 rounded-[50px] text-white "><span id="copy-count"
+                            class="mr-1">0
                         </span>Copy</button>
                 </div>
             </div>
@@ -50,7 +51,8 @@
         <section class="bg-[#f5fff6] min-h-[100vh] pb-15 ">
             <div class="cards-parent container max-w-[1370px] mx-auto pt-[50px] sm:grid grid-cols-12  gap-10">
                 <div class=" gap-10 rounded-lg  col-span-9 ">
-                    <div id="card-container" class="px-1 gap-3 grid sm:grid-cols-3  grid-cols-2 sm:gap-10">
+                    <div id="card-container"
+                        class="px-1 gap-5 grid sm:grid-cols-3  grid-cols-1 sm:gap-10 w-[85%] mx-auto">
                         <div class="card sm:h-[270px]  bg-[#ffffff] p-5 rounded-xl shadow-md">
                             <div class="flex justify-between items-center">
                                 <div class="bg-[#ffe3e2] p-2 rounded-lg">
@@ -70,7 +72,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class=" copy-btn border-2 border-[#d4d6d5] py-1 cursor-pointer rounded-lg w-[50%]  flex items-center justify-center gap-1 hover:bg-slate-400 "><i
                                         class="fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i
@@ -97,7 +99,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class="copy-btn border-2 border-[#d4d6d5] py-1 cursor-pointer rounded-lg w-[50%] flex items-center justify-center gap-1 hover:bg-slate-400"><i
                                         class="copy-btn fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i
@@ -124,7 +126,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class="copy-btn border-2 border-[#d4d6d5] py-1 cursor-pointer rounded-lg w-[50%] flex items-center justify-center gap-1 hover:bg-slate-400"><i
                                         class="copy-btn fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i
@@ -151,7 +153,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class="copy-btn border-2 border-[#d4d6d5] py-1 cursor-pointer rounded-lg w-[50%] flex items-center justify-center gap-1 hover:bg-slate-400"><i
                                         class="copy-btn fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i
@@ -178,7 +180,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class="copy-btn border-2 border-[#d4d6d5] py-1 cursor-pointer rounded-lg w-[50%] flex items-center justify-center gap-1 hover:bg-slate-400"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i
@@ -205,7 +207,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class="copy-btn border-2 border-[#d4d6d5]  py-1 cursor-pointer rounded-lg w-[50%] flex items-center justify-center gap-1 hover:bg-slate-400"><i
                                         class="copy-btn fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i
@@ -232,7 +234,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class="copy-btn border-2 border-[#d4d6d5]  py-1 cursor-pointer rounded-lg w-[50%] flex items-center justify-center gap-1 hover:bg-slate-400"><i
                                         class="fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i
@@ -259,7 +261,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class="copy-btn border-2 border-[#d4d6d5] py-1 cursor-pointer rounded-lg w-[50%] flex items-center justify-center gap-1 hover:bg-slate-400"><i
                                         class="copy-btn fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i
@@ -286,7 +288,7 @@
                             </div>
                             <div class="mt-5 flex justify-between gap-3">
                                 <button
-                                    class="copy-btn border-2 border-[#d4d6d5] px-[20px] py-1 cursor-pointer rounded-lg w-[50%] flex items-center gap-1 hover:bg-slate-400"><i
+                                    class="copy-btn border-2 border-[#d4d6d5]  py-1 cursor-pointer rounded-lg w-[50%] flex items-center justify-center gap-1 hover:bg-slate-400"><i
                                         class="copy-btn fa-regular fa-copy"></i> Copy</button>
                                 <button
                                     class="call-btn bg-[#00a63e] text-white px-[20px] py-1 cursor-pointer rounded-lg w-[50%] hover:bg-slate-400"><i

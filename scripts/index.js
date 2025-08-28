@@ -16,16 +16,10 @@ function getNumbers(id) {
 	return getNumber;
 }
 
-// click event
-// const callBtn = document.getElementsByClassName("call-btn");
-// console.log(callBtn);
-
 const heartBtn = document.getElementsByClassName("heart-icon");
 
 for (let btn of heartBtn) {
 	btn.addEventListener("click", function () {
-		console.log("heart clicked");
-
 		let count = getNumbers("heart-count");
 
 		count = count + 1;
@@ -43,14 +37,9 @@ for (const callBtn of callBtns) {
 
 		const cardNumber =
 			callBtn.parentNode.parentNode.children[2].children[0].innerText;
-		// console.log(cardNumber);
-
-		// console.log(cardTitle);
 
 		const cardName =
 			callBtn.parentNode.parentNode.children[1].children[0].innerText;
-
-		// console.log(cardName);
 
 		const coinPrice = getNumbers("coin-price");
 		const setCoinPrice = coinPrice - 20;
@@ -80,24 +69,18 @@ for (const callBtn of callBtns) {
                         
       `;
 		historyContainer.append(newContainer);
-		// console.log(historyContainer);
 	});
 }
 
 document.getElementById("clear-btn").addEventListener("click", function () {
-	// console.log("clear");
-
 	const container = getId("history-container");
 	container.innerHTML = "";
 });
 
 const copyBtns = document.getElementsByClassName("copy-btn");
 
-// console.log(copyBtns);
-
 for (const copyBtn of copyBtns) {
 	copyBtn.addEventListener("click", function () {
-		// console.log("copy clicked");
 		let copyCount = getNumbers("copy-count");
 		console.log(copyCount);
 		copyCount = copyCount + 1;

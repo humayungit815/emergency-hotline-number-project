@@ -36,6 +36,7 @@ for (let btn of heartBtn) {
 
 const callBtns = document.getElementsByClassName("call-btn");
 for (const callBtn of callBtns) {
+	console.log(callBtn);
 	callBtn.addEventListener("click", function () {
 		const cardTitle =
 			callBtn.parentNode.parentNode.childNodes[3].childNodes[3].innerText;
@@ -84,12 +85,29 @@ for (const callBtn of callBtns) {
 }
 
 document.getElementById("clear-btn").addEventListener("click", function () {
-	console.log("clear");
+	// console.log("clear");
 
 	const container = getId("history-container");
 	container.innerHTML = "";
 });
 
-const now = new Date();
-const time = now.toLocaleTimeString();
-console.log(time);
+const copyBtns = document.getElementsByClassName("copy-btn");
+
+// console.log(copyBtns);
+
+for (const copyBtn of copyBtns) {
+	copyBtn.addEventListener("click", function () {
+		// console.log("copy clicked");
+		let copyCount = getNumbers("copy-count");
+		console.log(copyCount);
+		copyCount = copyCount + 1;
+		getId("copy-count").innerText = copyCount;
+		const cardNumber =
+			copyBtn.parentNode.parentNode.children[2].children[0].innerText;
+		console.log(cardNumber);
+
+		navigator.clipboard.writeText(cardNumber).then(() => {
+			alert(`নাম্বার কপি হয়েছে: ${cardNumber}`);
+		});
+	});
+}
